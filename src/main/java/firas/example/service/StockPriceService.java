@@ -6,7 +6,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-// import gson and api shit 
+
+// import gson and api
 
 public class StockPriceService {
 

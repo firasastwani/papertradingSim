@@ -9,12 +9,15 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 import firas.example.model.User;
-import java.math.BigDecimal; 
+import java.math.BigDecimal;
 
+import com.google.gson.GsonBuilder;
 /**
  * JavaFX App
  */
 public class App extends Application {
+
+    GsonBuilder builder = new GsonBuilder();
 
     private static Scene scene;
 
@@ -36,7 +39,7 @@ public class App extends Application {
 
     public static void main(String[] args) {
 
-         // Create a new user with a starting balance of $10,000
+        // Create a new user with a starting balance of $10,000
         User user = new User(BigDecimal.valueOf(10000));
 
         // Retrieve and print the user's balance
